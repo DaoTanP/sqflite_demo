@@ -37,7 +37,11 @@ class _MainAppState extends State<MainApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Product"),
+          title: const Text(
+            "Product",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
         ),
         floatingActionButton: FloatingActionButton(
           child: const Icon(Icons.add),
